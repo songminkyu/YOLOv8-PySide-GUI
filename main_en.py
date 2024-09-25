@@ -50,7 +50,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         UIFuncitons.shadow_style(self, self.Model_QF, QColor(64, 186, 193))
 
         # YOLO-v8 thread
-        self.yolo_predict = YoloPredictor()  # Create YOLO instance
+        overrides = {'batch': 1}  # Preset batch size (default 16)
+        self.yolo_predict = YoloPredictor(cfg=DEFAULT_CFG, overrides=overrides)  # Create YOLO instance
         self.select_model = self.model_box.currentText()  # Default model
         
         self.yolo_thread = QThread()  # Create YOLO thread
@@ -104,7 +105,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         UIFuncitons.shadow_style(self, self.Model_QF_cam, QColor(64, 186, 193))
 
         # YOLO-v8-cam thread
-        self.yolo_predict_cam = YoloPredictor()  # Create YOLO instance
+        overrides = {'batch': 1}  # Preset batch size (default 16)
+        self.yolo_predict_cam = YoloPredictor(cfg=DEFAULT_CFG, overrides=overrides)  # Create YOLO instance
         self.select_model_cam = self.model_box_cam.currentText()  # Default model
         
         self.yolo_thread_cam = QThread()  # Create YOLO thread
