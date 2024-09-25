@@ -12,7 +12,7 @@
 Python3.11 버전의 가상 환경을 생성한 후 환경을 시작합니다.
 
 ```shell
-conda create --name yolov8-gui python=3.10
+conda create --name yolov8-gui python=3.11
 conda activate yolov8-gui
 ```
 ### 2. 종속성 패키지 설치
@@ -21,8 +21,8 @@ conda activate yolov8-gui
 pip install pyside6
 pip install chardet
 pip install pytube
-pip install ultralytics==8.2.66
-pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+pip install ultralytics == 8.2.86
+pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118
 ```
 
 ### 3. 실행 프로그램
