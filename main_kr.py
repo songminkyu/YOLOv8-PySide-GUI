@@ -507,7 +507,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         }.get(self.task, './models/')
 
         # YOLO 인스턴스의 새 모델 이름 설정
-        self.yolo_predict.new_model_name = f"{model_prefix}{self.task.lower()}/{self.select_model}"
+        self.yolo_predict.new_model_name = f"{model_prefix}/{self.select_model}"
 
         # 모델이 변경되었다는 메시지 표시
         self.show_status(f'Change Model: {self.select_model}')
@@ -642,7 +642,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         }.get(self.task, './models/')
 
         # YOLO 인스턴스의 새 모델 이름 설정
-        self.yolo_predict_cam.new_model_name = f"{model_prefix}{self.task.lower()}/{self.select_model_cam}"
+        self.yolo_predict_cam.new_model_name = f"{model_prefix}/{self.select_model_cam}"
 
         # 모델이 변경되었다는 메시지 표시
         self.show_status(f'Change Model: {self.select_model_cam}')
