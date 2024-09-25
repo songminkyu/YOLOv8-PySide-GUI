@@ -1,7 +1,7 @@
 # YoloSide ~ A GUI For YOLOv8 `V2.5`
 ---
   <p align="center"> 
-  English &nbsp; | &nbsp; <a href="https://github.com/songminkyu/YOLOv8-GUI-PySide6/blob/main/README_ko_kr.md">한국어</a>
+  English &nbsp; | &nbsp; <a href="https://github.com/songminkyu/YOLOv8-PySide-GUI/blob/main/README_ko_kr.md">한국어</a>
  </p>
 
 
