@@ -109,6 +109,7 @@ Run main.exe to start the application.
 ## To Do
 - [ ] Monitor system hardware usage
 - [ ] Graph showing changes in target quantity
+- [ ] Sqlite3 Record
 
 ## References
 - [PyQt5-YOLOv5](https://github.com/Javacr/PyQt5-YOLOv5)

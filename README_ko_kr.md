@@ -107,6 +107,10 @@ main.exe를 실행하여 애플리케이션을 시작합니다.
 - 입력 카메라 지원
 - `chose_rtsp`, `load_rtsp` 기능 지원
 
+## To Do
+- [ ] Monitor system hardware usage
+- [ ] Graph showing changes in target quantity
+- [ ] Sqlite3 Record
 
 ## 참고자료
 - [PyQt5-YOLOv5](https://github.com/Javacr/PyQt5-YOLOv5)
