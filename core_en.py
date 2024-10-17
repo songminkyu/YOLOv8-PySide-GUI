@@ -15,6 +15,7 @@ from ultralytics.cfg import get_cfg, get_save_dir
 from ultralytics.trackers import track
 from ultralytics import YOLO
 
+from utils.image_save import ImageSaver
 from PySide6.QtCore import Signal, QObject
 from collections import defaultdict
 from pathlib import Path
@@ -576,4 +577,5 @@ class YoloPredictor(BasePredictor, QObject):
 
         # Save images
         if self.save_res or self.save_res_cam:
-            cv2.imwrite(save_path, self.im)
+            image_saver = ImageSaver(self.im)
+            image_saver.save_image(save_path)
