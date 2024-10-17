@@ -320,7 +320,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             filters = "Pic File(*.mp4 *.mkv *.avi *.flv)"
         else:
             title = 'Video/image'
-            filters = "Pic File(*.mp4 *.mkv *.avi *.flv *.jpg *.png)"
+            filters = "Pic File(*.mp4 *.mkv *.avi *.flv *.jpg *.png *.heic)"
         
         name, _ = QFileDialog.getOpenFileName(self, title, open_fold, filters)
         
