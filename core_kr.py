@@ -337,7 +337,7 @@ class YoloPredictor(BasePredictor, QObject):
 
     def check_save_dirs(self):
         if self.save_res or self.save_txt or self.save_res_cam or self.save_txt_cam:
-            (self.save_dir / 'labels' if (self.save_txt or self.save_txt_cam) else self.save_dir).mkdir(parents=True, exist_ok=True)  # 檢查保存目錄
+            (self.save_dir / 'labels' if (self.save_txt or self.save_txt_cam) else self.save_dir).mkdir(parents=True, exist_ok=True)  # 저장 디렉터리를 확인하세요.
 
     def inference(self, im, profiler, *args, **kwargs):
         with profiler:
